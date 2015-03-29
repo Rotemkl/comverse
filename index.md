@@ -15,11 +15,11 @@ Comverse Policy Studio
 LEARN MORE
 
 1. Comverse Is Value-Added Service Global Market Leader
-#####Read more
+  1.Read more
 2. Managed Services World Congress September 18-19 Berlin, Germany
-#####Read More
+  1.Read More
 3. Comverse:Enabling a world if Conected Possibilities
-#####Watch Now
+  1.Watch Now
 
 ---
 
