@@ -39,22 +39,22 @@ LEARN MORE
 ##WHAT'S HAPPENING AT COMVERSE?
 
 ###1. NEWS
-####  1. 04
-####  2. sep
+  ####1. 04
+  ####2. sep
 Comverse Regains Lead in Convergent Charging Market Regains Lead in
-##  3. All News
+  ##3. All News
 
 ###2. EVENTS
-####  1. 04
-####  2. sep
+  ####1. 04
+  ####2. sep
 Comverse Regains Lead in Convergent Charging Market Regains Lead in
-##  3. All News
+  ##3. All News
 
 3.
-####  1. 04
-####  2. sep
+  ####1. 04
+  ####2. sep
 Comverse Regains Lead in Convergent Charging Market Regains Lead in
-##  3. All News
+  ##3. All News
 
 ---
 
