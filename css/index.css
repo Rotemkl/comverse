@@ -1,0 +1,211 @@
+
+.firstnav li, .secondnav li, .secondtext li{ 
+	display: inline-block;
+	padding-left: 5px;
+}
+
+.firstnav{
+	margin-left: 900px;
+	font-size: x-small;
+	font-family: Normal 400;
+}
+
+.secondnav{
+	margin-left: 250px;
+	font-size: small;
+	font-family: Normal 400;
+
+}
+
+.firstsection h2{
+	font-size: 200%;
+	font-family: Normal 400;
+}
+
+.firstsection{
+	background-image: url('../img/slide-bg-complexity.jpg');
+	background-attachment: fixed;
+}
+
+.firsttext, .secondtext, .thirdtext, .lasttext{
+		margin-left: 300px;
+		padding: 20px;
+		color: white;	
+		font-family: Normal 400;
+		font-family: Normal 400;
+}
+
+.fourtext{
+		margin-left: 300px;
+		padding: 20px;
+}
+
+.firsttext li{
+	display: inline-block;
+	padding-left: 10px;
+	padding-top: 15px;
+	background: rgb(247, 65, 159);
+	opacity: 0.8;
+	height: 100px;
+	width: 200px;
+	border-radius: 5px;
+	margin: 10px;
+	font-family: Normal 400;	
+}
+
+.firsttext li:hover{
+	opacity:1;
+}
+
+.firsttext li+li{
+	background: rgb(106, 196, 61);
+}
+
+.firsttext li+li+li{
+	background: rgb(255,117,25);
+}
+
+.secondsection{
+	background: rgb(82, 174, 209);
+}
+
+.secondtext ul{
+	list-style-type: none;
+	display: inline-block;
+	padding-left: 5px;
+	font-family: Normal 400;
+}
+.secondtext h2{
+	margin-left: 200px;
+	font-family: Normal 400;
+}
+
+.secondtext button{
+	margin-left: 300px;
+}
+
+.thirdsection{
+	background-image: url('../img/news-and-events-bg.jpg');
+	background-attachment: fixed;
+}
+
+.thirdtext h2{
+	margin-left: 160px;
+	font-family: Normal 400;
+}
+
+.thirdtext li{
+	display: inline-block;
+	padding-left: 10px;
+	padding-top: 15px;
+	font-size: small;
+	font-family: Normal 400;
+	height: 100px;
+	width: 200px;
+	background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+ .thirdtext li:hover{
+	background-color: rgba(255, 255, 255, 0.7);
+ }
+
+.thirdtext li>p+p{
+	opacity:1;
+}
+
+.thirdtext li>p+p{
+	color:black;
+	font-family: Normal 400;
+	margin-left: 5px;
+}
+
+.date{
+	float:left;
+	background: rgb(82, 174, 209);
+	opacity: 0.9;
+	height: 80px;
+	width: 50px;
+	opacity: 1;
+	font-size: large;
+}
+
+.date+br{
+	font-size: small;
+}
+
+.foursection{
+	background: rgb(236, 236, 236);
+	
+}
+
+.foursection h2{
+	margin-left: 240px;
+	font-family: Normal 400;
+}
+
+.foursection button{
+	margin-left: 260px;
+	font-family: Normal 400;
+}
+
+.fourtext li{
+	background-color: rgba(255, 255, 255, 0.7);
+	display: inline-block;
+	padding-left: 5px;
+	padding-top: 15px;
+	margin: 10px;
+	height: 150px;
+	width: 100px;
+	font-family: Normal 400;
+}
+
+.fourtext li:hover{
+	background-color: rgba(255, 255, 255, 1);
+}
+
+.fourtext li+li+li{
+	width: 150px;
+}
+
+.last{
+	background-color: rgb(45, 45, 45);
+}
+
+.listtext, .lastlisttext{
+	display: inline-block;
+	font-family: Normal 400;
+	list-style-type: none;
+	font-size: small;
+	width: 200px;
+}
+
+.lastlisttext{
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.lasttext h3{
+	color: rgb(38,147,201);;
+	font-size: medium;
+}
+
+.seconddate{
+	float:left;
+	height: 50px;
+	width: 50px;
+	font-size: large;
+}
+
+#boldtext{
+	font-weight: bold;
+}
+
+button{
+	background: rgb(38,147,201);
+	border-radius: 5px;
+	color:white;
+	padding: 10px 20px; 
+	border-style: hidden;
+	font-size:x-small;
+	font-family: Normal 400;
+}
+

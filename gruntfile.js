@@ -32,13 +32,30 @@ module.exports = function(grunt) {
       }
     }
 	
+, 
+	watch: {
+      options:{livereload:true},
+      files: ['*.js','*.html','*.css'],
+      tasks: ['uglify']
+    },
+    express: {
+      all:{
+        options: {
+          port:9000,
+          hostname:'localhost',
+          bases:['.'],
+          livereload:true
+        }
+      }
+    }
   });
-
   // Load the plugin that provides the "uglify" task.
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-md2html');
-
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-express');
   // Default task(s).
   grunt.registerTask('default', ['uglify']);
-
+  grunt.registerTask('server', ['express' ,'watch']);
 };
+	
