@@ -105,6 +105,7 @@
 	width: 200px;
 	background-color: rgba(255, 255, 255, 0.3);
 	font-family: Normal 400;
+	padding-left: 10px;
  }
   
  .inbox:hover{
@@ -127,8 +128,8 @@
 .date{
 	float:left;
 	background: rgb(82, 174, 209);
-	height: 80px;
-	width: 50px;
+	height: 60px;
+	width: 45px;
 	font-size: large;
 }
 
@@ -160,10 +161,13 @@
 	height: 150px;
 	width: 200px;
 	font-family: Normal 400;
+	-webkit-transition: width 2s;
+    transition: width 2s;
+	-webkit-transition-timing-function: linear;
 }
 
 .fourtext li:hover{
-	background-color: rgba(255, 255, 255, 1);
+	height: 10px;
 }
 
 .fourtext li+li+li{
@@ -217,3 +221,10 @@ button{
 	font-family: Normal 400;
 }
 
+#aimg:hover{
+	content: url('../img/solution_icon_smart-money_hover.png');
+}
+
+#cimg:hover{
+	content: url('../img/solution_icon_optimize-efficnt_hover.png');
+}
