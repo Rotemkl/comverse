@@ -1,4 +1,10 @@
 
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
 .firstnav li, .secondnav li, .secondtext li{ 
 	display: inline-block;
 	padding-left: 5px;
@@ -7,19 +13,18 @@
 .firstnav{
 	margin-left: 900px;
 	font-size: x-small;
-	font-family: Normal 400;
+	text-align: left;
 }
 
 .secondnav{
 	margin-left: 250px;
 	font-size: small;
-	font-family: Normal 400;
-
+	text-align: left;
 }
 
 .firstsection h2{
 	font-size: 200%;
-	font-family: Normal 400;
+	text-align: left;
 }
 
 .firstsection{
@@ -28,19 +33,16 @@
 }
 
 .firsttext, .secondtext, .thirdtext, .lasttext{
-		margin-left: 300px;
 		padding: 20px;
 		color: white;	
-		font-family: Normal 400;
-		font-family: Normal 400;
 }
 
 .fourtext{
-		margin-left: 300px;
 		padding: 20px;
 }
 
 .firsttext li{
+	vertical-align: top;
 	display: inline-block;
 	padding-left: 10px;
 	padding-top: 15px;
@@ -50,7 +52,6 @@
 	width: 200px;
 	border-radius: 5px;
 	margin: 10px;
-	font-family: Normal 400;	
 }
 
 .firsttext li:hover{
@@ -73,15 +74,6 @@
 	list-style-type: none;
 	display: inline-block;
 	padding-left: 5px;
-	font-family: Normal 400;
-}
-.secondtext h2{
-	margin-left: 200px;
-	font-family: Normal 400;
-}
-
-.secondtext button{
-	margin-left: 300px;
 }
 
 .thirdsection{
@@ -89,22 +81,15 @@
 	background-attachment: fixed;
 }
 
-.thirdtext h2{
-	margin-left: 160px;
-	font-family: Normal 400;
-}
-
 .thirdtext li{
 	display: inline-block;
 	font-size: small;
-	font-family: Normal 400;
   }
   
  .inbox{
 	height: 100px;
 	width: 200px;
 	background-color: rgba(255, 255, 255, 0.3);
-	font-family: Normal 400;
 	padding-left: 10px;
  }
   
@@ -118,7 +103,6 @@
 
 .inbox p+p{
 	color:black;
-	font-family: Normal 400;
 	margin-left: 5px;
 	padding-right: 10px;
 	padding-left: 10px;
@@ -142,16 +126,6 @@
 	
 }
 
-.foursection h2{
-	margin-left: 240px;
-	font-family: Normal 400;
-}
-
-.foursection button{
-	margin-left: 260px;
-	font-family: Normal 400;
-}
-
 .fourtext li{
 	background-color: rgba(255, 255, 255, 0.6);
 	display: inline-block;
@@ -160,10 +134,10 @@
 	margin: 10px;
 	height: 150px;
 	width: 200px;
-	font-family: Normal 400;
 	-webkit-transition: width 2s;
     transition: width 2s;
 	-webkit-transition-timing-function: linear;
+	vertical-align: top;
 }
 
 .fourtext li:hover{
@@ -180,19 +154,16 @@
 
 .listtext, .lastlisttext{
 	display: inline-block;
-	font-family: Normal 400;
 	list-style-type: none;
 	font-size: small;
 	width: 200px;
-}
-
-.lastlisttext{
-	width: 180px;
-	height: 200px;
+    vertical-align: top;
 }
 
 .lastlisttext{
 	background-color: rgba(255, 255, 255, 0.2);
+	width: 180px;
+	height: 200px;
 }
 
 .lasttext h3{
@@ -207,6 +178,12 @@
 	font-size: large;
 }
 
+.aperson{
+	float:left;
+	height: 50px;
+	width: 50px;
+}
+
 #boldtext{
 	font-weight: bold;
 }
@@ -218,13 +195,30 @@ button{
 	padding: 10px 20px; 
 	border-style: hidden;
 	font-size:x-small;
-	font-family: Normal 400;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 #aimg:hover{
 	content: url('../img/solution_icon_smart-money_hover.png');
 }
 
+#bimg:hover{
+	content: url('../img/solution_icon_biz-transform_hover.png');
+}
+
 #cimg:hover{
 	content: url('../img/solution_icon_optimize-efficnt_hover.png');
+}
+
+#dimg:hover{
+	content: url('../img/solution_icon_diti-cx_hover.png');
+}
+
+#eimg:hover{
+	content: url('../img/solution_icon_personal_hover.png');
+}
+
+#fimg:hover{
+	content: url('../img/solution_icon_biz-analitics_hover.png');
 }
