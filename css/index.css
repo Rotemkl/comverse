@@ -5,6 +5,17 @@ body{
 	text-align: center;
 }
 
+button{
+	background: rgb(38,147,201);
+	border-radius: 5px;
+	color:white;
+	padding: 10px 20px; 
+	border-style: hidden;
+	font-size:x-small;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
 .firstnav li, .secondnav li, .secondtext li{ 
 	display: inline-block;
 	padding-left: 5px;
@@ -16,15 +27,50 @@ body{
 	text-align: left;
 }
 
-.secondnav{
+.secondnav {
 	margin-left: 250px;
 	font-size: small;
 	text-align: left;
 }
 
+.secondnav ul a {
+	display:block;
+	color:black;
+	text-decoration:none;
+	padding: 0px 12px;
+}
+
+.secondnav li{
+	position:relative;
+}
+
+.secondnav li:hover {
+	background: #f6f6f6;
+}
+
+.secondnav ul {
+	background: white;
+	display: none;
+	position: absolute;
+	padding: 0;
+}
+
+.secondnav ul a {
+	padding: 10px 10px;
+}
+
+.secondnav ul li {
+	width: 160px;
+	float: none;
+	text-align: left;
+}
+
+.secondnav li:hover > ul {
+	display:block;
+}
+
 .firstsection h2{
 	font-size: 200%;
-	text-align: left;
 }
 
 .firstsection{
@@ -32,37 +78,62 @@ body{
 	background-attachment: fixed;
 }
 
+.slideshow li {
+  background-color: #e5e5e5;
+  color: #e5e5e5;
+  font-size: 12px;
+  border-radius: 3px;
+  width: 12px;
+  height: 12px;
+  margin-left: 6px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.firstbox {
+  background-color: #2e95ca !important;
+  color: #2e95ca !important;
+}
+
+
+.firstsection h2, .firstsection h3, .slideshow{
+	text-align: left;
+	margin-left: 250px;
+}	
+
 .firsttext, .secondtext, .thirdtext, .lasttext{
-		padding: 20px;
-		color: white;	
+	padding: 20px;
+	color: white;	
 }
 
 .fourtext{
-		padding: 20px;
+	padding: 20px;
 }
 
-.firsttext li{
+.listbox li{
 	vertical-align: top;
 	display: inline-block;
 	padding-left: 10px;
 	padding-top: 15px;
 	background: rgb(247, 65, 159);
 	opacity: 0.8;
-	height: 100px;
-	width: 200px;
+	height: 120px;
+	width: 220px;
 	border-radius: 5px;
 	margin: 10px;
+	font-size: 18px;
+	text-align: left;
 }
 
-.firsttext li:hover{
+.listbox li:hover{
 	opacity:1;
 }
 
-.firsttext li+li{
+.listbox li+li{
 	background: rgb(106, 196, 61);
 }
 
-.firsttext li+li+li{
+.listbox li+li+li{
 	background: rgb(255,117,25);
 }
 
@@ -82,15 +153,17 @@ body{
 }
 
 .thirdtext li{
+	vertical-align: bottom;
 	display: inline-block;
 	font-size: small;
   }
   
  .inbox{
 	height: 100px;
-	width: 200px;
+	width: 230px;
 	background-color: rgba(255, 255, 255, 0.3);
-	padding-left: 10px;
+	border-radius: 5px;
+	margin: 10px;
  }
   
  .inbox:hover{
@@ -109,12 +182,20 @@ body{
 	padding-top: 15px;
 }
 
+.news{
+	float: left;
+	margin-left: 10px;
+}
+
 .date{
 	float:left;
 	background: rgb(82, 174, 209);
 	height: 60px;
 	width: 45px;
 	font-size: large;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
 }
 
 .date+br{
@@ -123,29 +204,46 @@ body{
 
 .foursection{
 	background: rgb(236, 236, 236);
-	
 }
 
-.fourtext li{
-	background-color: rgba(255, 255, 255, 0.6);
-	display: inline-block;
-	padding-left: 5px;
-	padding-top: 15px;
-	margin: 10px;
-	height: 150px;
-	width: 200px;
-	-webkit-transition: width 2s;
-    transition: width 2s;
-	-webkit-transition-timing-function: linear;
-	vertical-align: top;
+.boxone, .boxtwo, .boxthree{
+  display: inline-block;
+  width: 340px;
+  vertical-align: top;
 }
 
-.fourtext li:hover{
-	height: 10px;
+.boxthree{
+	width: 260px;
 }
 
-.fourtext li+li+li{
-	width: 150px;
+.insidetext {
+	background-color: rgba(255, 255, 255, 0.9);
+	margin: 8px;
+	padding-left: 8px;
+	padding-top: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.pics{
+  display: inline-block;
+}
+
+.fourtext img{
+  display: inline-block;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  border-radius: 6px;
+  float: left;
+}
+
+#a:hover{
+	content: url('../img/logos_generic_2nd_side_cut_02_w108px_x_h95px.jpg');
+}
+
+.insidetext:hover{
+	background-color: rgb(38,147,201);
 }
 
 .last{
@@ -163,7 +261,8 @@ body{
 .lastlisttext{
 	background-color: rgba(255, 255, 255, 0.2);
 	width: 180px;
-	height: 200px;
+	height: 220px;
+	padding: 20px;
 }
 
 .lasttext h3{
@@ -178,25 +277,43 @@ body{
 	font-size: large;
 }
 
-.aperson{
+.lastpics{
+	float: left;
+}
+
+
+#events1, #events2{
+	float: left;
+	margin-left: 20px;
+}
+
+#events1:hover{
+	content: url('../img/eventListIconNews_hover.png');
+}
+
+#events2:hover{
+	content: url('../img/eventListIconEvents_hover.png');
+}
+
+.news:hover{
+	color:black;
+}
+
+#linkicon{
 	float:left;
-	height: 50px;
-	width: 50px;
+	margin-top: 15px;
+}
+
+.firstsection img+p{
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	font-size: 13px;
+	font-weight: bold;
 }
 
 #boldtext{
 	font-weight: bold;
-}
-
-button{
-	background: rgb(38,147,201);
-	border-radius: 5px;
-	color:white;
-	padding: 10px 20px; 
-	border-style: hidden;
-	font-size:x-small;
-	margin-top: 30px;
-	margin-bottom: 30px;
 }
 
 #aimg:hover{
@@ -221,4 +338,16 @@ button{
 
 #fimg:hover{
 	content: url('../img/solution_icon_biz-analitics_hover.png');
+}
+
+#yt:hover{
+	content: url('../img/socialMenuIcon-youtube_hover.png');
+}
+
+#tw:hover{
+	content: url('../img/socialMenuIcon-twitter_hover.png');
+}
+
+#li:hover{
+	content: url('../img/socialMenuIcon-linkdin_hover.png');
 }
