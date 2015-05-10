@@ -21,16 +21,19 @@ button{
 	padding-left: 5px;
 }
 
+.firstnav, .secondnav{
+	background-color: white;
+    text-align: left;
+}
+
 .firstnav{
 	margin-left: 900px;
 	font-size: x-small;
-	text-align: left;
 }
 
 .secondnav {
 	margin-left: 250px;
 	font-size: small;
-	text-align: left;
 }
 
 .secondnav ul a {
@@ -74,34 +77,41 @@ button{
 }
 
 .firstsection{
-	background-image: url('../img/slide-bg-complexity.jpg');
+	background: url('../img/slide-bg-complexity.jpg') no-repeat center 90px;
+	background-size: auto 639px;
+    z-index: 5;
 	background-attachment: fixed;
 }
 
-.slideshow li {
-  background-color: #e5e5e5;
-  color: #e5e5e5;
-  font-size: 12px;
+.slideshow li{
+  background-color: rgb(236,236,236);
+  font-size: 14px;
   border-radius: 3px;
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
   margin-left: 6px;
   display: inline-block;
   cursor: pointer;
 }
 
-.firstbox {
-  background-color: #2e95ca !important;
-  color: #2e95ca !important;
+.slideshow li>a{
+  color: rgb(236,236,236);
 }
 
+.firstbox {
+  background-color: #2e95ca !important;
+}
+
+.firstbox a{
+  color: #2e95ca !important;
+}
 
 .firstsection h2, .firstsection h3, .slideshow{
 	text-align: left;
 	margin-left: 250px;
 }	
 
-.firsttext, .secondtext, .thirdtext, .lasttext{
+.firsttext, .secondtext, .thirdtext, .last-footer{
 	padding: 20px;
 	color: white;	
 }
@@ -110,6 +120,7 @@ button{
 	padding: 20px;
 }
 
+
 .listbox li{
 	vertical-align: top;
 	display: inline-block;
@@ -117,13 +128,14 @@ button{
 	padding-top: 15px;
 	background: rgb(247, 65, 159);
 	opacity: 0.8;
-	height: 120px;
-	width: 220px;
+	height: 150px;
+	width: 24%;
 	border-radius: 5px;
-	margin: 10px;
+	margin-right: 2%;
 	font-size: 18px;
 	text-align: left;
 }
+
 
 .listbox li:hover{
 	opacity:1;
@@ -137,6 +149,7 @@ button{
 	background: rgb(255,117,25);
 }
 
+
 .secondsection{
 	background: rgb(82, 174, 209);
 }
@@ -148,8 +161,9 @@ button{
 }
 
 .thirdsection{
-	background-image: url('../img/news-and-events-bg.jpg');
+	background: url('../img/news-and-events-bg.jpg') no-repeat center center;
 	background-attachment: fixed;
+	background-size: cover;
 }
 
 .thirdtext li{
@@ -246,7 +260,7 @@ button{
 	background-color: rgb(38,147,201);
 }
 
-.last{
+.last-footer{
 	background-color: rgb(45, 45, 45);
 }
 
@@ -258,6 +272,10 @@ button{
     vertical-align: top;
 }
 
+.listtext{
+	text-align: left;
+}
+
 .lastlisttext{
 	background-color: rgba(255, 255, 255, 0.2);
 	width: 180px;
@@ -265,7 +283,7 @@ button{
 	padding: 20px;
 }
 
-.lasttext h3{
+.footer-list h3{
 	color: rgb(38,147,201);;
 	font-size: small;
 }
@@ -350,4 +368,264 @@ button{
 
 #li:hover{
 	content: url('../img/socialMenuIcon-linkdin_hover.png');
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.mobile-menu ul {
+    display: none;
+}
+
+.mobile-footer-nav{
+	display: none;
+}
+
+input[type=checkbox] {
+    display:none;
+}
+
+#search-input{
+	radius: 5px;
+}
+
+#mobile-comv{
+	display:none;
+}
+
+#mobile-search{
+	display:none;
+}
+.mobile-menu-nav li{
+	list-style-type: none;
+}
+
+@media only screen and (min-width: 35em) {
+}
+
+@media all and (max-width:850px){
+
+
+.firstnav, .secondnav {
+	display: none;
+}
+
+#mobile-comv{
+	display:inline;
+	margin-left: 6%;
+}
+
+#mobile-search{
+	display: inline;
+	margin-left: 80%;
+	text-align: top;
+}
+
+.menu-btn{
+	display:block;
+    margin-top: 40px;
+	margin-left: 10px;
+	background-color: rgb(236, 236, 236);
+	width: 40px;
+	height: 40px;
+}
+
+#menu-icon{
+	padding: 10px;
+}
+
+.mobile-menu-nav li{
+	display: inline-block;
+	margin-left: 15%;
+}
+
+.firstsection, .firsttext, .listbox{
+	padding: 0px;
+}
+
+.firstsection h2, .firstsection h3, .slideshow, #learnmore{
+	margin-left: 20px;
+	margin-top: 10px;
+}	
+
+.mobile-nav{
+    display: block;
+}
+   
+   
+label {
+    display: block;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);
+}
+
+label:hover {
+    cursor: pointer;
+}
+  
+
+.mobile-menu, .mobile-menu ul{
+	list-style: none;
+    padding: 0;
+}  
+
+.mobile-menu {
+    display: none;
+    font: 1rem;
+    position: absolute;
+    width: 100%;
+}
+
+
+.mobile-menu li {
+    color: rgb(236, 236, 236);
+}
+
+.mobile-menu label {
+    background : white;
+	width: 100%;
+	border-radius: 0;
+}
+
+.mobile-menu li a, .mobile-menu label {
+    background-color: white;
+	text-decoration: none;
+    margin: 0;
+    padding: 0 20px;
+    height: 2rem;
+    text-transform: uppercase;
+    display: block;
+    text-align: left;
+    color: #585951;
+    border-bottom: 1px solid #dbdbdb;
+    border-top: 1px solid #fff;
+    line-height: 2rem;
+}
+
+input[type="checkbox"]:checked ~ ul {
+    display: block;
+    top:50px;
+}
+	
+
+.listbox li{
+	display: block;
+	margin: 0px;
+	border-radius: 0px;
+	width: 100%;
+	opacity: 1;
+	margin-top: 5px;
+}
+
+.arr-img{
+  content: url(../img/btnArrow.png);
+  display: inline-block;
+  float: right;	
+  margin-right: 5px;
+  margin-top: 30px;
+
+}
+
+.slideshow li{
+  background-color: rgb(236,236,236);
+  width: 2rem ;
+  height: 2rem;
+  margin:0px;
+}
+
+.firstbox{
+ background-color: rgb(236,236,236);
+}
+
+.slideshow li>a, .firstbox >a{
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+}
+
+.slideshow li:hover{
+	background-color:rgb(38,147,201);
+}
+
+.firstheader{
+	padding-left: 3px;
+	padding-right: 3px;
+	padding-top: 10px;
+	background-color:rgb(38,147,201,0.5);
+}
+	
+ 
+.footer-list{
+	display: none;
+ }
+ 
+.mobile-footer-nav{
+    display: block;
+}
+
+.mobile-footer{
+    display: block;
+	list-style: none;
+    background-color: rgb(45, 45, 45);
+    margin-bottom: 15px;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1rem;
+	text-align: left;
+}
+
+.mobile-footer li, .mobile-footer li >a{
+	color: white;
+}
+
+.mobile-footer li {
+    border-bottom: 1px solid black;
+	padding: 10px 10px 10px 10px;
+}
+
+.mobile-footer li:hover {
+    background-color: rgb(154,154,154);
+}
+
+.mobile-footer li > a {
+    text-decoration: none;
+}
+
+.mobile-footer img{
+	float: right;
+	margin-right: 10px;
+}
+
+.thirdtext li {
+    display:block;
+    list-style-type: none;
+    padding-top: 20px;
+    padding-bottom: 15px;
+	text-align: left;
+}
+
+.thirdtext h3{
+	margin-left: 12px;
+	font-size: 20px;
+}
+
+.inbox{
+	width: 90%;
+}
+
+}	
+	
+@media (max-width: 767px){
+
+.boxthree{
+	display:none;
+}
+.secondtext>ul>li{
+	width: 30%;
+}
+
 }

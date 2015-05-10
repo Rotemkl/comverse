@@ -7,7 +7,7 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<meta name="viewport" width="device-width">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
@@ -17,7 +17,60 @@
     </head>
     <body>
        
-<nav class:"navbar navbar-fixed-top">	   
+	        <!-- mobile menue -->
+			
+	   		<div class="mobile-nav">
+			  <label class="menu-btn" for="nav-btn">
+					<img id="menu-icon" src="img/hamburger-icon.png" alt="menu btn">
+  			 </label>
+			<input type="checkbox" id="nav-btn">
+			
+				<ul class="mobile-menu">
+						<li class="mainmenu">
+								<input type="checkbox" class="mobile-sub" id="sub1">
+								<label for="sub1">YOUR NEEDS</label>
+						  <ul class="mobile-sub">
+							<li><a href="#">Digital Services</a></li>
+							<li><a href="#">Revenue</a></li>
+							<li><a href="#">Communication</a></li>
+						  </ul>
+						</li>
+						<li class="mainmenu">
+								<input type="checkbox" class="mobile-sub" id="sub2">
+								<label for="sub2">OUR PORTFOLIO</label>
+						  <ul class="mobile-sub">
+							<li><a href="#">Digital Services</a></li>
+							<li><a href="#">Revenue</a></li>
+							<li><a href="#">Communication</a></li>
+						  </ul>
+						</li>
+					<li class="mainmenu">
+								<input type="checkbox" class="mobile-sub" id="sub3">
+								<label for="sub3">NEWS &amp; MEDIA</label>
+						<ul class="mobile-sub">
+							<li><a href="#">Digital Services</a></li>
+							<li><a href="#">Revenue</a></li>
+							<li><a href="#">Communication</a></li>
+						</ul>
+					</li>
+					<li class="mainmenu">
+								<input type="checkbox" class="mobile-sub" id="sub4">
+								<label for="sub4">ABOUT COMVERSE</label>
+						<ul class="mobile-sub">
+							<li><a href="#">Digital Services</a></li>
+							<li><a href="#">Revenue</a></li>
+							<li><a href="#">Communication</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<ul class="mobile-menu-nav">		
+			<li><img id="mobile-comv" src="img/comverse-logo.png" alt="comverse"></li>
+			<li><img id="mobile-search" src="img/searchBtnMobile.png" alt="search"></li>
+			</ul>
+		
+<nav class="navbar navbar-fixed-top">	   
   <ul class="firstnav">
     <li>EN </li>
 	<li> | </li>
@@ -27,7 +80,7 @@
 
 <nav class="navbar navbar-fixed-top">
   <ul class="secondnav">
-	<img src="img/comverse-logo-medium.png" alt="comverse logo">
+	<img id="comv" src="img/comverse-logo-medium.png" alt="comverse logo">
 	<li class="mainmenu">YOUR NEEDS
 	         <ul>
                   <li><a href="#">Digital Services</a></li>
@@ -59,35 +112,46 @@
                   <li><a href="#">Communication</a></li>
               </ul>
 	</li>
+	<li>
+  		<label for="search-input">
+			<img id="searchbtn" src="img/searchBtn.png" alt="search"/>
+		</label>
+	</li>
+	<li>
+		<input type="checkbox" id="search-input"/>				
+		<form class="searchbox" method="GET">
+			<input type="text" name="search_item" placeholder="Search"/>					
+		</form>
+	</li>
   </ul>
 </nav>
 
 <section class="firstsection">
  <div class="firsttext">
-       <header>
-           <h2><span id="boldtext">Free</span> Your Markets <br> From IT <span id="boldtext">Complexity</span></h2>
-       </header>
-	   <h3>Comverse Policy Studio <br> <span id="boldtext">1st</span> Ever Marketing-oriented Policy Tool</h3>
-	   
-	    <ul class = "slideshow">
-            <li class="firstbox"> 0 </li>
-			<li> 0 </li>
-			<li> 0 </li>
-			<li> 0 </li>
-        </ul>
-	<button>LEARN MORE</button>
+       <h2><b>Free</b> Your Markets <br> From IT <b>Complexity</b></h2>
+	   <h3>Comverse Policy Studio <br> <b>1st</b> Ever Marketing-oriented Policy Tool</h3>	   
+	   <ul class = "slideshow">
+            <li class="firstbox"><a href="#"> 1 </a></li>
+			<li><a href="#"> 2 </a></li>
+			<li><a href="#"> 3 </a></li>
+			<li><a href="#"> 4 </a></li>
+       </ul>
+	   <button id="learnmore">LEARN MORE</button>
 	
 	   <ul class="listbox">
 			<li>Comverse Is Value-Added Service Global Market Leader
 				<br>
+				<img class="arr-img">
 				<img id="linkicon" src="img/link-icon-image.png" alt="linkicon">
 				<p>Read more</p></li>
 			<li>Managed Services World Congress September 18-19 Berlin, Germany
 				<br>
+				<img class="arr-img">
 				<img id="linkicon" src="img/link-icon-image.png" alt="linkicon">
 				<p>Read More</p></li>
 			<li>Comverse:Enabling a world if Connected Possibilities
 				<br>
+				<img class="arr-img">
 				<img id="linkicon" src="img/link-icon-image.png" alt="linkicon">
 				<p>Watch Now</p></li>
 		</ul>
@@ -195,36 +259,36 @@
   </div>
 </section>
 
-<footer class="last">
-  <div class="lasttext">
+<footer class="last-footer">
+  <div class="footer-list">
 		<ul class="listtext">
 			<h4>KEY SOLUTIONS</h4>
-			<li>monetizing dar</li>
-			<li>over the top (ott)</li>
-			<li>machine to machine (m2m)</li>
-			<li>cloud computing</li>
-			<li>managed services</li>
-			<li>customer experience management</li>
-			<li>rich communication suite (rcs)</li>
-			<li>social media
+			<li>Monetizing dar</li>
+			<li>Over the top (ott)</li>
+			<li>Machine to machine (m2m)</li>
+			<li>Cloud computing</li>
+			<li>Managed services</li>
+			<li>Customer experience management</li>
+			<li>Rich communication suite (rcs)</li>
+			<li>Social media
 			<li>4G/LTE</li>
 		</ul>
 		<ul class="listtext">	
 			<h4>PRODUCTS AND SERVICES</h4>
-			<li>billing</li>
+			<li>Billing</li>
 			<li>VAS</li>
-			<li>mobile internet</li>
-			<li>global services</li>
-			<li>training  services</li>
+			<li>Mobile internet</li>
+			<li>Global services</li>
+			<li>Training  services</li>
 		</ul>
 		<ul class="listtext">
 			<h4>COMPANY</h4>
-			<li>executive profiles</li>
-			<li>clients</li>
-			<li>investors</li>
-			<li>partners</li>
-			<li>corporate involvement</li>
-			<li>careers</li>
+			<li>Executive profiles</li>
+			<li>Clients</li>
+			<li>Investors</li>
+			<li>Partners</li>
+			<li>Corporate involvement</li>
+			<li>Careers</li>
 		</ul>
 		<ul class="lastlisttext">
 			<h3>LATEST BLOG POSTS</h3>
@@ -237,8 +301,19 @@
 			  <img id="tw" src="img/socialMenuIcon-twitter.png" alt="icon">
 			  <img id="li" src="img/socialMenuIcon-linkdin.png" alt="icon">
 			</div>
+		</ul>	
+</div>
+<div class="mobile-footer-nav">
+		<ul class="mobile-footer">
+				<li><a href="#">CONTACT US</li></a>
+				<li><a href="#">SUBSCRIBE TO COMVERSE NEWS</a></li>
+				<li><a href="#">VISIT US ON : 
+					<img id="yt" src="img/socialMenuIcon-youtube.png" alt="icon">
+					<img id="tw" src="img/socialMenuIcon-twitter.png" alt="icon">
+					<img id="li" src="img/socialMenuIcon-linkdin.png" alt="icon">
+				</a></li>
 		</ul>
-  </div>
+</div>
 </footer>
    
     </body>
