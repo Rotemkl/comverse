@@ -48,7 +48,7 @@ button{
 }
 
 .secondnav li:hover {
-	background: #f6f6f6;
+	background: rgb((246,246,246));
 }
 
 .secondnav ul {
@@ -99,11 +99,11 @@ button{
 }
 
 .firstbox {
-  background-color: #2e95ca !important;
+  background-color: rgb(46,149,202) !important;
 }
 
 .firstbox a{
-  color: #2e95ca !important;
+  color: rgb(46,149,202) !important;
 }
 
 .firstsection h2, .firstsection h3, .slideshow{
@@ -456,10 +456,10 @@ input[type=checkbox] {
    
 label {
     display: block;
-    border: 1px solid #d9d9d9;
+    border: 1px solid rgb(217, 217, 217);
     border-radius: 5px;
     text-decoration: none;
-    background: linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);
+    background: linear-gradient(to bottom,rgb(242,242,242) 0%,rgb(229, 229, 229) 100%);
 }
 
 label:hover {
@@ -491,18 +491,18 @@ label:hover {
 }
 
 .mobile-menu li a, .mobile-menu label {
+    text-align: left;
     background-color: white;
+	color: rgb(88,89,81);
 	text-decoration: none;
     margin: 0;
     padding: 0 20px;
     height: 2rem;
     text-transform: uppercase;
     display: block;
-    text-align: left;
-    color: #585951;
-    border-bottom: 1px solid #dbdbdb;
-    border-top: 1px solid #fff;
-    line-height: 2rem;
+	line-height: 2rem;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    border-top: 1px solid white;
 }
 
 input[type="checkbox"]:checked ~ ul {
